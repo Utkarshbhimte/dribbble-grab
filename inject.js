@@ -8,7 +8,7 @@
       );
       const palette = paletteDOM.map((a) => a.title.slice(1));
 
-      if (!!palette || !!palette.length) {
+      if (!!palette && !!palette.length) {
         const url = "https://coolors.co/" + palette.join("-");
         window.open(url);
       } else {

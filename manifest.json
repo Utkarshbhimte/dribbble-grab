@@ -16,10 +16,10 @@
   "browser_action": {
     "default_title": "DribbleGrab!"
   },
-  "permissions": ["https://dribbble.com/shots/*"],
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://dribbble.com/shots/*"],
+      "matches": ["https://dribbble.com/*", "http://dribbble.com/*"],
       "js": ["inject.js"]
     }
   ]
