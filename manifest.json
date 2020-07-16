@@ -1,0 +1,21 @@
+{
+  "name": "DribbleGrab",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Grab palette from dribble in one tap",
+  "homepage_url": "http://workofutkarsh.com",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "DribbleGrab!"
+  },
+  "permissions": ["https://dribbble.com/shots/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://dribbble.com/shots/*"],
+      "js": ["inject.js"]
+    }
+  ]
+}
