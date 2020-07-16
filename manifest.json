@@ -2,6 +2,11 @@
   "name": "DribbleGrab",
   "version": "0.0.1",
   "manifest_version": 2,
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
   "description": "Grab palette from dribble in one tap",
   "homepage_url": "http://workofutkarsh.com",
   "background": {
